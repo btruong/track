@@ -185,13 +185,6 @@
                 $(e.target).unbind('submit').trigger('submit');
               });
             break;
-          case "iframe":
-            $(this).iframeTracker(function (e) {
-              if (window.mixpanel) {
-                mixpanel.track(event_name, props);
-              }
-            });
-            break;
         }
       });
 
